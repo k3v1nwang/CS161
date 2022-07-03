@@ -1,0 +1,37 @@
+Kevin Wang 
+UID: 205209507
+=========================================
+QUESTION 1:
+(SEQ 0) returns 1(SEQ 1) returns 1(SEQ 2) returns 1(SEQ 3) returns 3(SEQ 4) returns 5(SEQ 5) returns 9(SEQ 6) returns 17(SEQ 7) returns 31(SEQ 8) returns 57(SEQ 9) returns 105(SEQ 10) returns 193The larger the value, the slower the computation time and with a large enough N (ie. n = 100), the program will time out. This is due to the recursive nature of SEQ requiring the program to compute the all previous n values, n - 1 values, n - 2, and n - 3 values. Thus, the time complexity of each call increases exponentially with respect to N. 
+===========================================
+QUESTION 2: 
+
+(SUMS 0)	returns 0
+(SUMS 1)	returns 0
+(SUMS 2)	returns 0
+(SUMS 3)	returns 2
+(SUMS 4)	returns 4
+(SUMS 5)	returns 8
+(SUMS 6)	returns 16
+(SUMS 7)	returns 30
+(SUMS 8)	returns 56
+(SUMS 9)	returns 104
+(SUMS 10) returns 192
+
+The number of additions when N < 3 is 0. When N >= 3, there are 2 additional recursive calls to SEQ. Since SUMS counts the number of times 1 is added to itself, SUMS(N) = SEQ(N) - 1. 
+
+===========================================
+QUESTION 3: 
+
+Outputs for the test cases: 
+
+(ANON '42) =  0
+(ANON 'FOO) =  0
+(ANON '(((l e ) f ) t )) =  (((0 0) 0) 0)
+(ANON ’(5 FOO 3.1 -0.2)) =  (0 0 0 0)
+(ANON '(1 (FOO 3.1) -0.2)) =  (0 (0 0) 0)
+(ANON '(((1 2) (FOO 3.1)) (BAR -0.2))) =  (((0 0) (0 0)) (0 0))
+(ANON '(R (I (G (H T))))) =  (0 (0 (0 (0 0))))
+
+
+

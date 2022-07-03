@@ -1,0 +1,26 @@
+Kevin Wang
+UID: 205209507
+==========================================
+GRAPH1.TXT 
+
+The instance of graph1.txt with 3 colors is UNSATISFIABLE
+The instance of graph2.txt with 4 colors is SATISFIABLE
+
+This tells us that graph1.txt can only be solved with 4 or more colors in the CSP.
+
+A solution to graph1.txt based on results of RSAT: 
+Let the 4 colors {R B G Y} correspond to the index of each row {1 2 3 4}, then the solution for nodes 1 - 7 returned from RSAT are: 
+
+node1: (Y) 
+node2: (G) 
+node3: (B) 
+node4: (G)
+node5: (R)
+node6: (B)
+node7: (R)
+
+==========================================
+GRAPH2.TXT 
+
+The minimum number of colors required to properly color graph2.txt is 8 
+
